@@ -29,13 +29,13 @@ protected:
 
 private:
 
-	UPROPERTY()
-		UCapsuleComponent* CapsuleComp;
-	UPROPERTY()
-		UStaticMeshComponent* BaseMesh;
-	UPROPERTY()
-		UStaticMeshComponent* TurretMesh;
-	UPROPERTY()
-		USceneComponent* ProjectileSpawnPoint;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Component", meta = (AllowPrivateAccess = "true"))
+	UCapsuleComponent* CapsuleComp;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Component", meta = (AllowPrivateAccess = "true"))
+	UStaticMeshComponent* BaseMesh;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Component", meta = (AllowPrivateAccess = "true"))
+	UStaticMeshComponent* TurretMesh;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Component", meta = (AllowPrivateAccess = "True"))
+	USceneComponent* ProjectileSpawnPoint;
 
 };
