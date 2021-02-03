@@ -9,6 +9,7 @@ void ATankGameModeBase::BeginPlay()
 
 void ATankGameModeBase::PlayerDied(AActor* DeadActor)
 {
+	UE_LOG(LogTemp, Warning, TEXT("A pawn Died."));
 }
 
 void ATankGameModeBase::HandleGameStart()
